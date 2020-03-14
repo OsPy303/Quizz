@@ -1,0 +1,103 @@
+Qu'est-ce que le SMTP ?;*Un protocole de transmission de courrier électronique; Un protocole de réception de courrier électronique sécurisé;Un protocole réseau pour internet
+Qu'est ce que le MP3 ?;Une méthode de protection de fichiers audio;Un protocole d'échange de fichiers audio;*Un format de compression de données audio
+Le HTML est un langage dit;Encodé;Cryté;*Balisé
+Quel est le tag à utiliser pour placer une image ?;<image src="" alt="">;<img source="" alt="">;*<img src="" alt="">
+Parmi les adresses IP suivantes, laquelle n’est pas valide;169.36.125.0;1.2.3.4;*147.126.256.9
+Quelle unité indique la qualité sonore du MP3?;*Kbps;Mbps;Mz
+Que signifie CPU?;Computer Processing Unit;*Central Processing Unit;Central Peripheral Unit
+Quel est le taux de transfert d'un périphérique USB 2.0 standard?;100 Mbit/s;*480 Mbit/s;250 Mbit/s
+Que signifie le BIOS?;*Basic Input Output System;Byte Integration Operations System;Basic Interconnect Operating System
+Lequel des éléments suivants n'est pas un langage de programmation?;C;*Malbolge;Turing
+Quelle entreprise a inventé la disquette en 1971?;Microsoft;Sony;*IBM
+Quel a été le premier microprocesseur 32 bits s'Intel?;Athlon XP;486SI;*386DX
+Parmi les navigateurs web suivants, lequel est développé par Apple?;*Safari;Opera;Chrome
+Quel fabricant a publié la série Galaxy Tab?;LG;Motorola;*Samsung
+Que signifie le "R" dans l'acronyme RAM?;Read;*Random;Real
+Qui est considéré comme le père des ordinateurs?;Alan Turing;Bill Gates;*Charles Babbage
+Lequel des éléments suivants ne fait pas partie de l'internet?;Youtube;*CD ROM;email
+Duel est l'acronyme de LCD?;Liquid Cable Display;*Liquid-Crystal Display;Liquid Creative Display
+Quel société a créé XBOX?;Nitendo;Sony;*Microsoft
+Quand Microsoft Windows 7 a-t-il été édité?;2010;2013;*2009
+Que représente DB?;Data Boot;*Database;Driver Boot
+Quel type de fichier est un fichier .TMP?;Fichier image;*Fichier temporaire;Fichier audio
+Parmi les navigateurs web suivants, lequel est développé par Microsoft?;*Explorer;Opera;Firefox
+Que signifie 'Q' dans "SQL"?;*Query;Quality;Qualcomm
+Parmi les navigateurs web suivants, lequel est développé par Google?;Opera;*Chrome;Explorer
+Laquelle des langages suivantes est orientée objet?;C;*Java;Malbolge
+Lequel des langages de programmation suivants a été développé en premier?;C++;*Cobol;Python
+Qu'est-ce que Internet explorer?;*Navigateur;Jeu;Moteur de recherche
+Par quelle société de logiciels illustrator a-t-il été développé?;Apple;Microsoft;*Adobe
+Par quelle compagnie l'ordinateur d'échecs Deep Blue a-t-il été inventé?;Opera Software;Google;*IBM
+Lequel des éléments suivants n'est pas une distribution linux?;Puppy;Mint;*OS-2
+En quelle année Intel Corporation a-t-elle été fondée?;1991;1975;*1968
+Quel type de fichier est un fichier .mpg?;*Vidéo;image;texte
+Où est le siège de Samsung?;Chine;Japon;*Corée du Sud
+Quel type de fichier est un fichier .mp3?;image;Vidéo;*Son
+Quel navigateur web est géré par Mozilla Corporation?;*Firefox;Opéra;Chrome
+En bash, quel commande permet de changer le propriétaire d'un fichier?;*chown;chmod;sudo
+En bash, quel commande permet de changer le droit d'accès à un fichier?;*chmod;chown;passwd
+Le nom de chargeur d’amorçage linux:;*GRUB;UEFI;BIOS
+Qu'est-ce qu'un bootloader?;*Un programme qui permet de lancer un ou plusieurs OS;Un programme qui permet de booter un clé USB;Un programme qui permet de supprimer un OS
+Le système android est basé sur;windows NT;*Linux kernel;OS-X
+Quelle société a développé le langage Swift?;*Apple;Oracle;Google
+Qui a inventé le langage Java?;*James Gosling;Guido van Rossum;Rasmus Lerdorf
+Par quelle société Java a-t-il été créé?;*Sun Microsystems;Oracle;Apple
+En quelle année PHP a-t-il été créé?;1991;*1994;2000
+Quelle société a developpé C#?;*Microsoft;Oracle;Google
+Lequel n'est pas un framework JavaScript?;Angular;React Native;*Flask
+A quel langage appartient le framework Django?;*Python;Java;PHP
+A quel langage appartient le framework Laravel?;*PHP;Go;Kotlin
+Un pouce vaut;5 cm;*2,54cm;2,55cm
+WWW signifie;*World Wide Web;Work Wide Web;Wild Wilb Web
+Quelle est la mémoire la plus petite taille de l'ordinateur?;RAM;*Registre;Dusque dur
+Lequel est le plus grand réseau informatique au monde?;*Internet;Bluetooth;Wifi
+Quelle entreprise développe les système d'éxploitation windows?;Apple;IBM;* Microsoft
+1 000 Mo est équvaut à;*1 Go;1 0;1 To
+Quel est la mascotte de PHP?;Un chat;Une tortue;*Un éléphant
+Le premier OS développé par Microsoft;Windows xp;*MS DOS;Windows 98
+Commande linux pour créer un dossier;*mkdir;ls;mdir
+Le fondateur de Microsoft;Steve Jobs;Lunus Torvalds;*Bill Gates
+Qui a inventer le sysème GNU/Linux;Bill Gate;*Linus Torvalds;Richard Stallman
+Le Cofondateur de la société Apple;Charle Babbage;*Steve Jobs;Tim Berners Lee
+La mémoire vive (RAM) est;Un système de sécurité des ordinateurs;*Une unité de stockage volatile d'informations;une unité de stockage permanent d'informations
+Lequel de ces supports est le plus rapide en lecture/écriture ?;une clé USB de 2 Go;*Un disque externe FireWire 2.0;une disquette
+L’un des noms suivants ne correspond pas à une menace externe;*Un bug;un cheval de Troie;un ver
+Un DVD-R est :;*un support qui permet d’enregistrer une seule fois;une vidéo numérique interactive;un disque DVD qui est réenregistrable
+Le presse-papier est;un marqueur électronique qui permet de sélectionner un document;un document;*une zone de la mémoire où sont stockés les derniers éléments coupés ou copiés et qui peut être réutilisée
+Le WIFI est;une abréviation qui signifie « rapide »;un système de gestion de contenu de sites Internet;*une technologie de liaison sans fil
+Comment se nomme le premier écran visible après l'allumage de votre ordinateur ?;Le poste de travail;*Le bureau;La barre des tâches
+Lequel des mots de passe suivants peut être considéré comme le plus sûr ?;P@ssw0rd;*Y&opx04>O;oscar7669
+Le protocole SSH utilise ;La cryptographie symétrique;La cryptographie asymétrique;*Les deux
+Que permet la défragmentation d'un disque dur ?;Supprimer les partitions non utilisées;Récupérer de l'espace en supprimant les fichiers inutiles;*Optimiser le temps de réponse en limitant l'éparpillement des fichiers
+Un système d'exploitation temps réel gère;Les horloges du système informatique;Le temps de travail de l'utilisateur;*La chronologie des tâches
+Lequel ne se rapporte pas à une fonction d'un système d'exploitation ?;Gestion des processus;Gestion des fichiers;*Aucune de ces réponses
+Lequel de ces opérateurs n'est pas utilisé en algèbre de Boole ?;XNOR;*XAND;NAND
+Quel est le système de gestion de fichiers qui permet la création d'un fichier vide ?;*EXT3;NTFS;FAT32
+Que contient le registre d'état d'un processeur ?;*L'état du résultat d'une instruction;L'état de la mémoire cache du processeur;L'état physique du processeur
+Quel Windows est sorti le plus récemment ?;Windows vista;Windows 17;*Windows 10
+Laquelle de ces propositions fait référence à un système d'exploitation?;*Linux;Outlook;VLC
+A quoi sert principalement la touche 'F1' ?;A fermer un logiciel;A éliminer les virus;*A afficher l'aide (si disponible
+Quel caractère appelle-t-on 'anti-slash' ?;/;*\;|
+Quel est le premier ordinateurs créé ?;Pc;*Eniac;Computer 1
+En quelle année le premier ordinateur a-t-il été créé?;*1946;1954;1980
+Quelle fut la première marque d'un ordinateur?;*Apple;HP;Compaq
+Quel est le principal atout de Linux ?;*C'est gratuit et plus fiable que Windows;Il y a plus de jeux que sur Windows;C'est très performant pour le multimédia
+Quel animal représente Linux?;Un Caribou;Une Marmotte;*Un Pingouin
+Quel célèbre navigateur internet a été réalisé par des linuxiens ?;*Mozilla Firefox;Internet Explorer;Opera
+Quel serveur web sous Linux est présent sur la plupart des serveurs du monde ?;Sioux;*Apache;Comanche
+Qui a créé le Projet GNU en 1984 ?;Linus Torvalds;*Richard Stallman;John von Neumann
+En 2005, Bill Gates a traité les linuxiens de;Mangeurs de boulons;Terroristes d'internet;*Communistes de l'informatique
+Quelle proposition est une distribution linux ?;Zubuntu;*Redhat;Mandrika 2.9
+Que veux dire 9.10 dans Ubuntu 9.10 ?;*Octobre 2009;C'est la version du noyau utilisé;C'est une version intermédiaire entre la 9 et la 10
+Mac OS X est-il basé sur Unix ?;*Oui;Non;En partie
+Que fait ce raccourci clavier : Ctrl + Alt + F2 sur Linux?;Ouvre une fenêtre d'aide;Va sur le bureau numéro 2;*Bascule vers la deuxième console plein écran
+Que fait cette commande : mv -R myFolder ~/Desktop/myFolder?;Copie myFolder sur le bureau (et son contenu);Déplace myFolder sur le bureau (sans son contenu);*Déplace myFolder sur le bureau (avec son contenu)
+Que fait cette ligne (sous Ubuntu) : sudo dpkg -i xxxx.deb?;Va lister le répertoire xxxx.deb;Rien, cette ligne est débile;*Va installer le paquet xxxx.deb
+Quelle commande permet de consulter le manuel d'une commande ?;*man;help;manual
+Que fait la commande ps(Linux)?;Indique la date;*Affiche les processus actifs;Affiche les droits d'un fichier
+Aptitude(Linux) est;Un programme qui donne l'altitude sur une carte;*Un gestionnaire de paquets;Un compilateur
+Quel est le framework le du C#?;*.NET;.EXE;.BAT
+Quel nom donne-t-on à un objet créé par une classe ?; Variable;Fonction;*Instance
+Qu'est-ce que le batch ?;Un langage de développement web;*Une suite de commande MS-Dos;Une suite de commande Linux
+A quelle langage appartient le bibliothèque graphique Kivy?;*Python;Java;C#
+Avec quelle langage cet application a-t-il été codé?🤪;*Python;C#;Kotlin
