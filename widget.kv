@@ -1,0 +1,394 @@
+#:import sleep time.sleep
+#:import RiseInTransition kivy.uix.screenmanager.RiseInTransition
+#:import data data
+
+
+Manager:
+	HomeScreen:
+	ScoreScreen:
+	AboutScreen:
+	GameScreen1:
+	GameScreen2:
+	GameOver:
+
+<MyButton@Button>:
+	size: (65, 65)
+	size_hint: (None, None)
+
+<HomeScreen>:
+	name: "home"
+	FloatLayout:
+		size: root.width, root.height 
+		canvas:
+			Rectangle:
+				size: self.size
+				pos: self.pos
+				source: data.HOME_BACKGROUND
+		Image:
+			pos_hint: {'top': 1.35}
+			source: data.HOME_TITLE
+
+		Button:
+			id:sound_but
+			size_hint: (None, None)
+			size: (45, 45)
+			pos_hint: {'center_x': .1, 'center_y': .70}
+			background_normal: data.IMG_SOUND_ON
+			background_down: data.IMG_SOUND_PRESSED
+			on_press:
+				root.set_sound(self)
+			on_release:
+				background_normal: data.IMG_SOUND_OFF
+
+		MyButton:
+			id:  start_button
+			pos_hint: {'center_x': .5, 'top': .6}
+			#size_hint: .2, self.width/root.width + (self.width-((20*root.height)/100))/root.height
+			background_normal: data.PLAY_UP
+			background_down: data.PLAY_DOWN
+
+			on_press:
+				root.load()
+
+			on_release:
+				root.manager.transition = RiseInTransition()
+				app.root.current = 'game1'
+			
+		MyButton:
+			id: score_button
+			background_normal: data.SCORE_UP
+			background_down: data.SCORE_DOWN
+			pos_hint: {'center_x': .20, 'center_y': .1}
+			on_press:
+				root.load_score()
+			on_release:
+				app.root.current = "score"
+
+		MyButton:
+			id: about_button
+			background_normal: data.ABOUT_UP
+			background_down: data.ABOUT_DOWN
+			pos_hint: {'center_x': .5, 'center_y': .1}
+			on_release:
+				app.root.current = 'about'	
+	
+		MyButton:
+			id: quit_button
+			background_normal: data.EXIT_UP
+			background_down: data.EXIT_DOWN
+			pos_hint: {'center_x': .8, 'center_y': .1}
+			on_release:
+				root.exit()
+	
+<LabelScore@Label>:
+	font_size: 25
+	bold: True
+	font_name: 'aller_bold.ttf'
+	text_size: (root.width - 2, self.height)
+	halign: 'center'
+	valign: 'center'
+
+<ScoreScreen>:
+	name: "score"
+	FloatLayout:
+		canvas:
+			Rectangle:
+				size: self.size
+				pos: self.pos
+				source: data.BACKGROUND
+		Label:
+			markup: True
+			text: "[font=Alenia.ttf][size=30]MEILLEURS SCORES[/size][/font]"
+			text_size: (root.width - 1, self.height)
+			halign: 'center'
+			valign: 'center'
+			bold: True
+			pos_hint: {"center_x": .5, "center_y": .9}
+
+		LabelScore:
+			text: root.score_1
+			pos_hint: {'center_x': .5, 'center_y': .8}
+
+		LabelScore:
+			text: root.score_2
+			pos_hint: {'center_x': .5, 'center_y': .75}
+
+		LabelScore:
+			text: root.score_3
+			pos_hint: {'center_x': .5, 'center_y': .7}
+
+		LabelScore:
+			text: root.score_4
+			pos_hint: {'center_x': .5, 'center_y': .65}
+
+		MyButton:
+			background_normal: data.HOME_UP
+			background_down: data.HOME_DOWN
+			pos_hint: {'center_x': .25, 'center_y': .10}
+			on_release:
+				app.root.current = 'home'
+
+		MyButton:
+			background_normal: data.RESET_UP
+			background_down: data.RESET_DOWN
+			pos_hint: {'center_x': .75, 'center_y': .10}
+
+			on_release:
+				root.reset()
+
+	
+<AboutScreen>:
+	name: "about"
+	FloatLayout:
+		canvas:
+			Rectangle:
+				pos: self.pos
+				size: self.size
+				source: data.BACKGROUND
+
+		Label:
+			text: '[font=Alenia.ttf][size=30]A PROPOS[/size][/font]'
+			markup: True
+			pos_hint: {'center_x': .5, 'center_y': .96}
+		Label:
+			id: link
+			markup: True
+			text: 
+				"[b][size=20]Quiz de connaissance informatique[/size]\n\
+				Version 1.0\n\
+				Développement: VAOHITA Ivan Oscar\n\
+				Conception du jeu: VAOHITA Ivan Oscar\n\
+				Conception graphique: VAOHITA Ivan Oscar\n\
+				Musique: Elgers Lo - Nexus V2 [ref=https://whoo.fr/telecharger/dorian-elgers-lo-nexus-v2/][u][color=e0f52a]www.whoo.fr[/color][/u][/ref]\n\
+				Images: [ref=https://pngtree.com/][u][color=e0f52a]www.pngtree.com[/color][/u][/ref]\n\
+				Bouton image: [ref=http://www.veer.com][u][color=e0f52a]www.veer.com[/color][/u][/ref]\n\
+				Effet sonore: [ref=http://www.lasonotheque.org][u][color=e0f52a]www.lasonotheque.org[/color][/u][/ref][/b]"
+			#halign: 'center'
+			#valign: 'center'
+			pos_hint: {'x': .02, 'center_y': .5}
+			text_size: (root.width - 10, None)
+			on_ref_press:
+				import webbrowser
+				webbrowser.open(args[1])
+		MyButton:
+			background_normal: data.HOME_UP
+			background_down: data.HOME_DOWN
+			pos_hint: {'center_x': .5, 'center_y': .10}
+			on_release:
+				app.root.current = 'home'
+
+
+<GameScreen1,GameScreen2>:
+	canvas:
+		Rectangle:
+			size: self.size
+			pos: self.pos
+			source: data.BACKGROUND
+
+
+<ScoreLabel@Label>:
+	pos_hint: {'center_x': .90, 'center_y': .96}
+	font_size: 25
+	bold: True
+
+<QuestionLabel@Label>:
+	font_size: 30
+	text_size: (root.width -2, None)
+	bold: True
+	halign: 'center'
+	pos_hint: {'center_x': .5, 'center_y': .75}
+
+
+<AnswereButton@Button>:
+	size_hint: (.9, .15)
+	#size: (self, 80)
+	background_normal: ''
+	background_color: (1, 1, 1, 0)
+	#size_hint: (None, None)
+	bold: True
+	text_size: (root.width -1, None)
+	halign: 'center'
+
+<Life@Image>:
+	source: data.LIFE
+
+<Bar@ProgressBar>:
+	max: 20
+	pos_hint: {'center_x': .5, 'center_y': .9}
+	#height: 100
+
+<GameScreen1>:
+	p_bar:p_bar
+	id: game1
+	name: "game1"
+	life_1_1:life_1_1
+	life_2_1:life_2_1
+	life_3_1:life_3_1
+
+	ans_a_1 : ans_a_1
+	ans_b_1 : ans_b_1
+	ans_c_1 : ans_c_1
+
+	quest_1: quest_1
+	FloatLayout:
+		size: root.width, root.height
+		Life:
+			id:life_1_1
+			pos_hint: {'center_x': .15, 'center_y': .96}
+		Life:
+			id:life_2_1
+			pos_hint: {'center_x': .25, 'center_y': .96}
+		Life:
+			id:life_3_1
+			pos_hint: {'center_x': .35, 'center_y': .96}
+
+		ScoreLabel:
+			#id: score_lab
+			text: root.score_lab
+
+		Bar:
+			id: p_bar
+
+		QuestionLabel:
+			id: quest_1
+			text: ""
+
+		AnswereButton:
+			id: ans_a_1
+			text: ""
+			pos_hint: {'center_x': .5, 'top': .6}
+			on_press:
+				root.check(self)
+
+			on_release:
+				sleep(.8)
+				self.background_normal: ''
+				#self.background_color: (1, 1, 1, 0)
+				app.root.current = "game2" if root.get_l() > 0 else 'over'
+				root.manager.transition.direction = 'left'
+
+				
+		AnswereButton:
+			id: ans_b_1
+			text: ""
+			pos_hint: {'center_x': .5, 'top': .42}
+			on_press:
+				root.check(self)
+			on_release:
+				sleep(1)
+				app.root.current = "game2" if root.get_l() > 0 else 'over'
+
+		AnswereButton:
+			id: ans_c_1
+			text: ""
+			pos_hint: {'center_x': .5, 'top': .24}
+			on_press:
+				root.check(self)
+			on_release:
+				sleep(.8)
+				app.root.current = "game2" if root.get_l() > 0 else 'over'
+	
+
+<GameScreen2>:
+	p_bar_2:p_bar_2
+	name: "game2"
+	life_1_2:life_1_2
+	life_2_2:life_2_2
+	life_3_2:life_3_2
+
+	quest_2 : quest_2
+	ans_a_2 : ans_a_2
+	ans_b_2 : ans_b_2
+	ans_c_2 : ans_c_2
+	FloatLayout:
+		size: root.width, root.height
+		Life:
+			id:life_1_2
+			pos_hint: {'center_x': .15, 'center_y': .96}
+		Life:
+			id:life_2_2
+			pos_hint: {'center_x': .25, 'center_y': .96}
+		Life:
+			id:life_3_2
+			pos_hint: {'center_x': .35, 'center_y': .96}
+		ScoreLabel:
+			#id: score_lab2
+			text: root.score_lab2
+		Bar:
+			id: p_bar_2
+
+		QuestionLabel:
+			id: quest_2
+			text: ""
+
+		AnswereButton:
+			id: ans_a_2
+			text: ""
+			pos_hint: {'center_x': .5, 'top': .6}
+			on_press:
+				root.check(self)
+			on_release:
+				sleep(1)
+				app.root.current = "game1" if root.get_l() > 0 else 'over'
+		AnswereButton:
+			id: ans_b_2
+			text: ""
+			pos_hint: {'center_x': .5, 'top': .42}
+			on_press:
+				root.check(self)
+			on_release:
+				sleep(1)
+				app.root.current = "game1" if root.get_l() > 0 else 'over'
+
+		AnswereButton:
+			id: ans_c_2
+			text: ""
+			pos_hint: {'center_x': .5, 'top': .24}
+			on_press:
+				root.check(self)
+			on_release:
+				sleep(1)
+				app.root.current = "game1" if root.get_l() > 0 else 'over'
+
+<GameOver>:
+	name: "over"
+	FloatLayout:
+		canvas:
+			Rectangle:
+				size: self.size
+				pos: self.pos
+				source: data.BACKGROUND
+
+		Label:
+			markup: True
+			text: "[font=Alenia.ttf][size=35]GAME OVER[/size][/font]"
+			font_size: 35
+			pos_hint: {'center_x': .5, 'center_y': .90}
+			bold: True
+
+
+		Label:
+			text: root.finalScore
+			font_size: 25
+			font_name: 'aller_bold.ttf'
+			halign: 'center'
+			valign: 'center'
+			text_size: (root.width, None)
+			bold: True
+			pos_hint: {'center_x': .5, 'center_y': .60}
+
+		MyButton:
+			background_normal: data.HOME_UP
+			background_down: data.HOME_DOWN
+			pos_hint: {'center_x': .25, 'center_y': .1}
+			on_release:
+				app.root.current = 'home'
+
+		MyButton:
+			background_normal: data.PLAY_UP
+			background_down: data.PLAY_DOWN
+			pos_hint: {'center_x': .75, 'center_y': .1}
+			on_press:
+				root.load()
+			on_release:
+				app.root.current = 'game1'
